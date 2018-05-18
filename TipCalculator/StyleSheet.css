@@ -6,7 +6,6 @@ body {
 }
 
 div#container{
- 
     border-style: solid!important;
     border-color: dodgerblue!important;
     width: 180px!important;
@@ -25,11 +24,35 @@ h2{
     color: white;
     text-align: center;
     margin: 0px;
-   
+    padding: 5px;
 }
 
 div#fullAmount{
-    font-weight: bold;
+   text-align: center;
+   width: 120px;
+}
+
+div#totalTip{
+    margin: 5px;
+}
+
+p#fa{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+p#tp{
+    margin: 0px;
+}
+
+p#tip{
+    margin:0px;
+}
+
+p#fullAmt{
+    margin: 0px;
 }
 
 form{
