@@ -1,16 +1,15 @@
 ﻿html{
-    : center;
 }
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
-
 div#container{
-    border: 2px;
-    border-color: dodgerblue;
-    width: 180px;
+ 
+    border-style: solid!important;
+    border-color: dodgerblue!important;
+    width: 180px!important;
     border-radius: 5px;
 }
 
@@ -25,5 +24,14 @@ h2{
     background-color: dodgerblue;
     color: white;
     text-align: center;
+    margin: 0px;
    
+}
+
+div#fullAmount{
+    font-weight: bold;
+}
+
+form{
+ margin-left: 10px;
 }

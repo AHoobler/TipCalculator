@@ -7,39 +7,38 @@
 
 </head>
 <body>
-    <div id="container">
-        <h2>Tip Calculator</h2>
-        <div id="calculator">
+   
+        <div id="container">
+            <h2>Tip Calculator</h2>
+            <div id="calculator">
 
-            <form>
-                <small>Bill</small><br />
-                <input id="bill" type="text" placeholder="$0.00"><br />
-                <small>Tip %</small><br />
-                <input id="tipAmount" placeholder="%"><br />
-                <small>Number of People</small><br />
-                <!--calls function on enter-->
-                <input id="calculate" type="text" placeholder="# of People"><br />
-            </form>
+                <form>
+                    <small>Bill</small><br />
+                    <input id="bill" type="text" placeholder="$0.00"><br />
+                    <small>Tip %</small><br />
+                    <input id="tipAmount" placeholder="%"><br />
+                    <small>Number of People</small><br />
+                    <!--calls function on enter-->
+                    <input id="calculate" type="text" placeholder="# of People"><br />
+                </form>
 
+            </div>
+
+            <!--display totals-->
+            <div id="totalTip">
+                Tip
+                <small id="each">Per Person</small> <p id="tip">0.00</p>
+            </div><br />
+            <div id="personTotal">
+                Total
+                <small id="totPerson">Per Person</small> <p id="tp">0.00</p>
+            </div>
+            <div id="fullAmount">
+                Full Amount
+                <p id="fa">0.00</p>
+            </div>
         </div>
-
-        <!--display totals-->
-        <div id="totalTip">
-            Tip
-            <small id="each">Per Person</small>
-            $<p id="tip">0.00</p>
-        </div><br />
-        <div id="personTotal">
-            Total
-            <small id="totPerson">Per Person</small>
-            $<p id="tp">0.00</p>
-        </div>
-        <div id="fullAmount">
-            Full Amount
-            $<p id="fa">0.00</p>
-        </div>
-
-    </div>
+     
     <script src="JavaScript.js"></script>
 </body>
 
