@@ -61,14 +61,21 @@ p#fullAmt{
     width: 180px;
     padding-top: 20px;
     text-align:center;
+
 }
 
 form{
  margin-left: 10px;
+ margin-bottom: 10px;
 }
 
 p#left{
     float: left;
+    font-weight: bold;
+}
+
+p#word{
+    margin: 0px;
     font-weight: bold;
 }
 
