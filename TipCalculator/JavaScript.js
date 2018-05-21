@@ -42,9 +42,7 @@
 
 //hide all
 document.getElementById("totalTip").style.display = "none";
-//document.getElementById("each").style.display = "none";
 document.getElementById("personTotal").style.display = "none";
-//document.getElementById("each2").style.display = "none";
 document.getElementById("fullAmount").style.display = "none";
 
 
