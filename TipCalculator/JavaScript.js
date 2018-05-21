@@ -31,9 +31,9 @@
     fullAmount = fullAmount.toFixed(2);
 
     //display all
-    document.getElementById("totalTip").style.display = "inline";
+    document.getElementById("totalTip").style.display = "block";
     document.getElementById("tip").innerHTML = total;
-    document.getElementById("personTotal").style.display = "inline";
+    document.getElementById("personTotal").style.display = "block";
     document.getElementById("tp").innerHTML = totalPerson;
     document.getElementById("fullAmount").style.display = "inline";
     document.getElementById("fa").innerHTML = fullAmount;
@@ -42,12 +42,40 @@
 
 //hide all
 document.getElementById("totalTip").style.display = "none";
-document.getElementById("each").style.display = "none";
+//document.getElementById("each").style.display = "none";
 document.getElementById("personTotal").style.display = "none";
-document.getElementById("totPerson").style.display = "none";
+//document.getElementById("each2").style.display = "none";
 document.getElementById("fullAmount").style.display = "none";
+
 
 //call function
 document.getElementById("calculate").onchange = function () {
     calculateTip();
 };
+
+//increase tip & people button function
+function tipUp(max) {
+    document.getElementById("tipAmount").value = parseInt(document.getElementById("tipAmount").value) + 1;
+    if (document.getElementById("tipAmount").value >= parseInt(max)) {
+        document.getElementById("mtipAmount").value = max;
+    }
+}
+function tipDown(min) {
+    document.getElementById("tipAmount").value = parseInt(document.getElementById("tipAmount").value) - 1;
+    if (document.getElementById("tipAmount").value <= parseInt(min)) {
+        document.getElementById("tipAmount").value = min;
+    }
+}
+
+function up(max) {
+    document.getElementById("calculate").value = parseInt(document.getElementById("calculate").value) + 1;
+    if (document.getElementById("calculate").value >= parseInt(max)) {
+        document.getElementById("calculate").value = max;
+    }
+}
+function down(min) {
+    document.getElementById("calculate").value = parseInt(document.getElementById("calculate").value) - 1;
+    if (document.getElementById("calculate").value <= parseInt(min)) {
+        document.getElementById("calculate").value = min;
+    }
+}

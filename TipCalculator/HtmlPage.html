@@ -7,38 +7,42 @@
 
 </head>
 <body>
-   
-        <div id="container">
-            <h2>Tip Calculator</h2>
-            <div id="calculator">
 
-                <form>
-                    <small>Bill</small><br />
-                    <input id="bill" type="text" placeholder="$0.00"><br />
-                    <small>Tip %</small><br />
-                    <input id="tipAmount" placeholder="%"><br />
-                    <small>Number of People</small><br />
-                    <!--calls function on enter-->
-                    <input id="calculate" type="text" placeholder="# of People"><br />
-                </form>
+    <div id="container">
+        <h2>Tip Calculator</h2>
+        <div id="calculator">
 
-            </div>
+            <form>
+                <small>Bill</small><br />
+                <input id="bill" type="text" placeholder="$0.00">  <br />
+                <small>Tip %</small><br />
+                <input type='button' value='-' class='qtyminus' field='quantity' onclick="tipDown('0')" /><input id="tipAmount" placeholder="%" name='quantity' value='0' class='qty'><input type='button' value='+' class='qtyplus' field='quantity' onclick="tipUp(100)" /><br />
+                <small>Number of People</small><br />
+                <!--calls function on enter-->
+                <input type='button' value='-' class='qtyminus' field='quantity' onclick="down('0')" /><input id="calculate" type="text" placeholder="# of People" name='quantity' value='0' class='qty'><input type='button' value='+' class='qtyplus' field='quantity' onclick="up(50)" /><br />
+            </form>
 
-            <!--display totals-->
-            <div id="totalTip">
-                Tip
-                <small id="each">Per Person</small> <p id="tip">0.00</p>
-            </div><br />
-            <div id="personTotal">
-                Total
-                <small id="totPerson">Per Person</small> <p id="tp">0.00</p>
-            </div>
-            <div id="fullAmount">
-                <p id="fullAmt">Full Amount</p>
-                <p id="fa">0.00</p>
-            </div>
         </div>
-    
+
+        <!--display totals-->
+        <div id="totalTip">
+            <br />Tip <br />
+            <small id="each">Per Person</small>
+            <div id="tip">0.00</div>
+        </div><br />
+
+        <div id="personTotal">
+            Total <br />
+            <small id="each2">Per Person</small>
+            <p id="tp">$0.00</p>
+        </div>
+
+        <div id="fullAmount">
+            <p id="fullAmt">Full Amount</p>
+            <p id="fa">0.00</p>
+        </div>
+    </div>
+
     <script src="JavaScript.js"></script>
 </body>
 

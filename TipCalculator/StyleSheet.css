@@ -10,10 +10,11 @@ div#container{
     border-color: dodgerblue!important;
     width: 180px!important;
     border-radius: 5px;
+    height: auto;
 }
 
 input{
-    width: 150px;
+    width: 100px;
     height: 30px;
     border-radius: 5px;
     text-align: center;
@@ -29,11 +30,12 @@ h2{
 
 div#fullAmount{
    text-align: center;
-   width: 120px;
+   width: 180px;
 }
 
-div#totalTip{
-    margin: 5px;
+div#personTotal {
+    padding: 5px;
+    width: 180px
 }
 
 p#fa{
@@ -43,18 +45,63 @@ p#fa{
     margin: 0px;
 }
 
-p#tp{
+p#tp,
+div#tip {
+    float: right;
     margin: 0px;
-}
-
-p#tip{
-    margin:0px;
+    width: auto;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-right: 10px;
 }
 
 p#fullAmt{
     margin: 0px;
+    height: 20px;
+    width: 180px;
+    padding-top: 20px;
+    text-align:center;
 }
 
 form{
  margin-left: 10px;
 }
+
+p#left{
+    float: left;
+    font-weight: bold;
+}
+
+.qty {
+    width: 40px;
+    height: 30px;
+}
+
+input.qtyplus {
+    width: 25px;
+    height: 37px;
+    border-radius: 0 5px 5px 0; 
+    font-weight:bold;
+    font-size: large;
+    border: none;
+}
+
+input.qtyminus {
+    width: 25px;
+    height: 37px;
+    border-radius: 5px 0 0 5px;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+}
+
+input#bill{
+    width: 150px;
+}
+
+input#calculate.qty,
+input#tipAmount.qty {
+    width: 100px;
+    border-radius: 0px;
+}
+
