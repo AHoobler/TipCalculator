@@ -32,11 +32,11 @@
 
     //display all
     document.getElementById("totalTip").style.display = "block";
-    document.getElementById("tip").innerHTML = total;
+    document.getElementById("tip").innerHTML = '$' + total;
     document.getElementById("personTotal").style.display = "block";
-    document.getElementById("tp").innerHTML = totalPerson;
+    document.getElementById("tp").innerHTML = '$' + totalPerson;
     document.getElementById("fullAmount").style.display = "inline";
-    document.getElementById("fa").innerHTML = fullAmount;
+    document.getElementById("fa").innerHTML = '$' + fullAmount;
 
 }
 
